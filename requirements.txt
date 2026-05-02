@@ -9,3 +9,6 @@ plotly
 pandas
 deepface
 tf-keras
+--upgrade pip
+
+
