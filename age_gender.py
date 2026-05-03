@@ -1,9 +1,11 @@
 from deepface import DeepFace
 import cv2
 
- 
+ def estimate_age_gender(face_img):
+    """Returns (None, None) – age/gender estimation disabled."""
+    return None, None
 
-def estimate_age_gender(face_img):
+def estimate_age_gender2(face_img):
     """face_img is a BGR numpy array (the face region). Returns (age, gender)."""
     try:
         # DeepFace expects RGB
