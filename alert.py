@@ -12,7 +12,7 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 def trigger_alert(frame, box, name, confidence, frame_number):
     x1, y1, x2, y2 = [int(c) for c in box]
     face_roi = frame[y1:y2, x1:x2]
-    age, gender = estimate_age_gender(face_roi)  # returns None, None (safe)
+    age, gender = estimate_age_gender(face_roi)  # safe stub
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
     snapshot_path = os.path.join(OUTPUT_DIR, f"match_{name}_{timestamp}.jpg")
 
@@ -35,7 +35,6 @@ def trigger_alert(frame, box, name, confidence, frame_number):
         "gender": gender,
         "bounding_box": [int(x) for x in box]
     }
-    # Append to log
     if os.path.exists(LOG_FILE):
         with open(LOG_FILE, 'r') as f:
             try:
