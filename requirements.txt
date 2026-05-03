@@ -1,5 +1,6 @@
 streamlit
-torch torchvision --index-url https://download.pytorch.org/whl/cpu
+torch
+torchvision
 facenet-pytorch
 opencv-python-headless
 numpy
@@ -9,4 +10,3 @@ scikit-learn
 plotly
 deepface
 tf-keras
-pip install --upgrade pip
