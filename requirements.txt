@@ -9,4 +9,4 @@ Pillow
 scikit-learn
 plotly
 deepface
-tf-keras
+tf-keras>=2.20
