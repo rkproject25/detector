@@ -1,1 +1,10 @@
-libgl1
+streamlit
+numpy==1.26.4
+opencv-python-headless==4.9.0.80
+torch
+torchvision
+facenet-pytorch
+pandas
+Pillow
+scikit-learn
+plotly
