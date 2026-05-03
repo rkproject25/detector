@@ -1,14 +1,12 @@
 streamlit
 torch torchvision --index-url https://download.pytorch.org/whl/cpu
 facenet-pytorch
-opencv-python
+opencv-python-headless
 numpy
-scikit-learn
-Pillow
-plotly
 pandas
+Pillow
+scikit-learn
+plotly
 deepface
 tf-keras
---upgrade pip
-
-
+pip install --upgrade pip
